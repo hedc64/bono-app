@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="300">
+  <title>Rifa Visa</title>
+
+  <!-- Meta etiquetas para redes sociales -->
+  <meta property="og:title" content="Rifa Visa - Asesoría de Visa de Turismo">
+  <meta property="og:description" content="Participa por una asesoría de visa. Solo $2.000 COP por número.">
+  <meta property="og:image" content="https://tusitio.com/imagen-social.jpg">
+  <meta property="og:url" content="https://rifa-app-t8qo.onrender.com">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rifa Visa - Asesoría de Visa de Turismo">
+  <meta name="twitter:description" content="Participa por una asesoría de visa. Solo $2.000 COP por número.">
+  <meta name="twitter:image" content="https://tusitio.com/imagen-social.jpg">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container" role="main">
+    <header>
+      <h1>Super Bono Solidario</h1>
+    </header>
+
+    <section class="info-box premio-box" aria-label="Información del premio">
+      <p>Diez Premios en efectivo: 9 de $100.000 - 1 de $300.000 acierte las dos ultimas cifras</p>
+      <p>Valor por número: $15.000 COP</p>
+    </section>
+
+    <section class="info-box sorteo-box" id="sorteo-date" aria-label="Fecha del sorteo">
+      <p>Sorteo: Cargando fecha...</p>
+    </section>
+
+    <section class="info-box valor-box" aria-label="Instrucciones de selección">
+      <p>Formas de ganar: La persona que con su numero seleccionado acierte las</p>
+      <p>2 ultimas, 2 primeras, 2 del medio, 2 extremos, 1y3 cifra, 2y4 cifra, 3y1 cifra, 4y2 cifra, 3y2 cifra, 4y1 cifra</p>
+      <p>Seleccione los números de su preferencia</p>
+    </section>
+
+    <section id="numbers-grid" class="grid" aria-label="Grilla de números disponibles"></section>
+
+    <section id="selection-info" class="selection-container" style="display: none;" aria-label="Números seleccionados">
+      <h2>Números Seleccionados</h2>
+      <ul id="selected-list"></ul>
+
+      <div id="confirmation" class="confirmation-box" style="display: none;">
+        <h3>Confirmar Selección</h3>
+        <p>Al confirmar, aceptas las condiciones del bono solidario:</p>
+        <ul>
+          <li>El pago debe realizarse en un máximo de 1 hora.</li>
+          <li>Debes enviar el comprobante de pago al WhatsApp indicado.</li>
+          <li>Si no se realiza el pago en el tiempo establecido, los números se liberarán.</li>
+          <li>Fecha del sorteo: <span id="confirmation-date">Cargando...</span></li>
+        </ul>
+
+        <div class="terms-section">
+          <h5>Importante: Leer los términos y condiciones.</h5>
+          <div class="terms-checkbox">
+            <input type="checkbox" id="accept-terms">
+            <label for="accept-terms">
+              Acepto los <a href="terminos.html" target="_self">Términos y Condiciones</a> del bono solidario
+            </label>
+          </div>
+          <button id="confirm-selection" disabled>Confirmar Selección</button>
+        </div>
+      </div>
+
+      <div id="payment-info" class="payment-box" style="display: none;">
+        <h3>Instrucciones de Pago</h3>
+        <div class="payment-step">
+          <p><strong>Paso 1:</strong> Pague $2.000 COP por número a través de Nequi o corresponsal</p>
+        </div>
+        <div class="payment-step">
+          <p><strong>Paso 2:</strong> Número NEQUI para pagos: <strong>311 452 1045</strong></p>
+        </div>
+        <div class="payment-step">
+          <p><strong>Paso 3:</strong> Envíe comprobante y datos al WhatsApp: <strong>+57 311 452 1045</strong></p>
+        </div>
+        <div class="payment-step">
+          <p><strong>Paso 4:</strong> Tienes 1 hora para completar el pago</p>
+        </div>
+        <div class="payment-step">
+          <p><strong>Fecha del sorteo:</strong> <span id="payment-date">Cargando...</span></p>
+        </div>
+        <a id="whatsapp-link" target="_blank" class="btn" rel="noopener noreferrer">Enviar por WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
